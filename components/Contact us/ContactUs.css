@@ -1,0 +1,56 @@
+ *::-webkit-scrollbar {
+     display: none;
+ }
+
+ #layout {
+     display: grid;
+     grid-template-areas:
+         "section section section form"
+         "section section section form"
+     ;
+     background-color: white;
+ }
+
+ #form {
+     grid-area: form;
+     padding: 10px 20px;
+     min-width: 300px;
+     display: flex;
+     align-items: center;
+     justify-self: center;
+ }
+
+ #layout input,
+ #layout textarea {
+     background-color: #f0eef8;
+ }
+
+ form {
+     width: 100%;
+ }
+
+ #section {
+     grid-area: section;
+     background-color: white;
+     width: 100%;
+     height: fit-content;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ @media only screen and (max-width: 750px) {
+     #layout {
+         grid-template-areas:
+             "section section section "
+             "section section section "
+             "form form form "
+             "form form form "
+         ;
+     }
+
+     #form {
+         width: 100%;
+         margin: 20px 0px;
+     }
+ }

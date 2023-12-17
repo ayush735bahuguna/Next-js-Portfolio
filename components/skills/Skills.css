@@ -1,0 +1,13 @@
+.wrapper {
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.innerBox {
+    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+}

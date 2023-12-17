@@ -1,0 +1,39 @@
+body {
+    overflow-y: visible;
+    /* position: relative; */
+    height: unset;
+}
+
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.firstContainer,
+.lastContainer {
+    height: 100vh;
+    width: 100vw;
+}
+
+
+
+.panel {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.box {
+    width: 40vw;
+}
+
+.content {
+    width: 40vw;
+    font-family: "fantasy";
+}
