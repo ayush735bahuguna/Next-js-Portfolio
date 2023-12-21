@@ -50,7 +50,7 @@ export default function Projects({ SkillsRef, projectsRef, contactRef }) {
             <div className="container" ref={projectsRef} >
 
                 <section className="panel ">
-                    <p className='text-8xl content'>My Projects</p>
+                    <p className='text-8xl content cursor-scale'>My Projects</p>
                     <Image src={project} alt='' style={{ width: '55vw' }} />
                     <div className="box">
                     </div>

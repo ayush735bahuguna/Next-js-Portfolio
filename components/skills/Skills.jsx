@@ -24,8 +24,8 @@ export default function Skills({ SkillsRef }) {
     ]
     return (
         <div style={{ height: '100vh' }} ref={SkillsRef} className='TextAnimationStop'>
+            <p className='text-8xl cursor-scale'>Skills</p>
             {/* <div className="wrapper">
-                <p className='text-8xl'>Skills</p>
 
                 <Card
                     img='https://icon-library.com/images/html-icon-png/html-icon-png-15.jpg'

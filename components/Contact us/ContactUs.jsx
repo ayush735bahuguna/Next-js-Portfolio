@@ -10,7 +10,7 @@ import Image from 'next/image'
 export default function ContactUs() {
     return (
         <>
-            <p className='text-8xl p-5'>Ready? <br />Let’s get started.</p>
+            <p className='text-8xl p-5 cursor-scale'>Ready? <br />Let’s get started.</p>
             <div id='layout'>
 
                 <div id='form'>

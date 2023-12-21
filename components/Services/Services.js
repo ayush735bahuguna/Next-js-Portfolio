@@ -14,7 +14,7 @@ export default function Services() {
             <div style={{ minWidth: '350px' }} className='flex justify-between flex-col items-start'>
                 <div></div>
                 <div>
-                    <p className='text-8xl'>Here’s what you can expect from me...</p>
+                    <p className='text-8xl cursor-scale'>Here’s what you can expect from me...</p>
                 </div>
 
                 <div >
