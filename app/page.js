@@ -9,6 +9,8 @@ import Skills from '@/components/skills/Skills'
 
 
 import { useTheme } from "next-themes"
+import { ArrowBigUp, ArrowUpFromDot, Github, GithubIcon, Instagram, Linkedin } from 'lucide-react'
+import { Button } from '@/components/ui/button'
 export default function page() {
   // const { setTheme, resolvedTheme } = useTheme();
 
@@ -70,9 +72,18 @@ export default function page() {
   return (
     <div ref={MainWrapperRef} style={{ transition: 'background-color ease 0.4s' }}>
       <div className="cursor"></div>
+      <Button size={'icon'} variant={'ghost'} style={{ position: 'fixed', bottom: '20px', right: '20px', zIndex: '99' }} className='rounded-full' onClick={() => { window.scrollTo(0, 0) }}> <ArrowUpFromDot /> </Button>
 
-      <div ref={heroRef}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatibus possimus nulla cum ducimus suscipit sapiente perferendis dignissimos inventore eius id reiciendis placeat temporibus enim magni aspernatur iste velit esse adipisci consectetur hic doloribus, minus aliquam. Laboriosam cupiditate explicabo possimus vero optio praesentium alias. Non iusto aspernatur hic temporibus exercitationem, quia, consequatur tempora vero nesciunt ea fugit ipsam quaerat alias quidem sequi voluptas, quasi soluta blanditiis. Accusamus quibusdam tenetur recusandae cumque voluptate odit officia aspernatur nobis, nemo perspiciatis harum esse deserunt vero fugiat temporibus porro culpa. Quam quaerat id blanditiis suscipit laborum esse. Consectetur ullam, atque tempora recusandae quos ea vel perspiciatis suscipit quia, labore voluptatibus. Quibusdam voluptatibus perspiciatis est deserunt eos dolore a maxime numquam molestiae, earum cupiditate corrupti praesentium possimus voluptate officiis aut iure aspernatur. Fugiat nostrum id cum cumque sint molestiae ratione. Exercitationem, facilis! Ea maiores, voluptatum fugit ratione perferendis voluptatem doloremque assumenda cupiditate praesentium molestias debitis, deleniti asperiores nulla magni modi natus dolor, magnam nobis neque quasi dolores eveniet ad porro. Nobis dolor fuga, voluptatum alias laboriosam voluptatem sapiente perspiciatis, magnam veniam doloribus commodi ab autem eos consectetur incidunt. Fugit, sed praesentium officiis culpa atque error voluptates odit eum. Veniam mollitia, iure cum aut nulla harum explicabo consequatur corporis eius, aspernatur culpa quidem. Dignissimos quas facere sequi nihil voluptatibus dolorum totam, eum quae aperiam tempore tempora aspernatur ab labore ipsam modi numquam iste atque consequuntur laudantium assumenda repellat velit sint, distinctio vitae. Rerum harum sint eligendi voluptatibus tempora, ipsa reprehenderit quidem, voluptate incidunt iure molestiae nobis, delectus facilis? Numquam alias nihil nobis dolorum mollitia eaque doloremque consequuntur. Ratione, reiciendis aliquid? Optio recusandae placeat maxime, consectetur quis adipisci culpa eum hic omnis laborum iste deleniti, reiciendis eligendi. Minima, ut ullam! Ex ducimus incidunt excepturi odit ipsam, neque qui quibusdam tempora, assumenda vel rerum veniam pariatur temporibus esse.
+      <div ref={heroRef} className='flex flex-col' style={{ paddingLeft: '10%', paddingTop: '10%', minHeight: '100vh', position: 'relative' }}>
+        <div className='p-5 gap-4 pt-10' style={{ position: 'absolute', top: '0px', right: '0px', width: '100vw', height: '10px', display: 'flex', alignItems: 'center', justifyContent: 'end' }}>
+          <GithubIcon size={'35px'} strokeWidth={1.3} />
+          <Instagram size={'35px'} strokeWidth={1.3} />
+          <Linkedin size={'35px'} strokeWidth={1.3} />
+        </div>
+
+        <h1 className='text-9xl font-semibold'>Hey,</h1>
+        <h1 className='text-9xl font-semibold'>I'm Ayush</h1>
+        <p className='text-5xl font-semibold' style={{ paddingLeft: '30%', paddingRight: '10%' }}>- a Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, fugiat!</p>
       </div>
       <Skills SkillsRef={SkillsRef} />
       <Projects projectsRef={projectsRef} contactRef={contactRef} />

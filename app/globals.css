@@ -80,6 +80,7 @@ html {
 * {
   /* cursor: none; */
   font-family: 'Poppins', sans-serif !important;
+  scroll-behavior: smooth !important;
 }
 
 

@@ -14,12 +14,10 @@ export default function Services() {
             <div style={{ minWidth: '350px' }} className='flex justify-between flex-col items-start'>
                 <div></div>
                 <div>
-                    <p className='text-8xl'>Services</p>
-                    <p className='text-2xl'>We work with you to build your business.</p>
+                    <p className='text-8xl'>Here’s what you can expect from me...</p>
                 </div>
 
-                <div className='pt-10'>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique </p>
+                <div >
                     <div className='p-1 flex gap-2 m-2 ml-0'> <Code2 color='blue' /> Website Design & Development</div>
                     <div className='p-1 flex gap-2 m-2 ml-0'> <Accessibility color='blue' /> Website Audit & Accessibility</div>
                     <div className='p-1 flex gap-2 m-2 ml-0'> <Shield color='blue' />Security and privacy</div>

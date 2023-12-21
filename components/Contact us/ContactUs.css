@@ -5,10 +5,9 @@
  #layout {
      display: grid;
      grid-template-areas:
-         "section section section form"
-         "section section section form"
+         "section form"
+         "section form"
      ;
-     background-color: white;
  }
 
  #form {
@@ -20,18 +19,12 @@
      justify-self: center;
  }
 
- #layout input,
- #layout textarea {
-     background-color: #f0eef8;
- }
-
  form {
      width: 100%;
  }
 
  #section {
      grid-area: section;
-     background-color: white;
      width: 100%;
      height: fit-content;
      display: flex;
