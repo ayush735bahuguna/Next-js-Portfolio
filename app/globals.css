@@ -8,7 +8,7 @@
 @layer base {
   :root {
     --courserColor: black;
-    --courserollowerColor: orange;
+    --courserollowerColor: white;
 
     --background: 240 50% 98%;
     --foreground: 246 50% 4%;
@@ -34,7 +34,7 @@
 
   .dark {
     --courserColor: white;
-    --courserollowerColor: blue;
+    --courserollowerColor: white;
 
     --background: 240 45% 2%;
     --foreground: 246 50% 96%;
@@ -81,20 +81,4 @@ html {
   /* cursor: none; */
   font-family: 'Poppins', sans-serif !important;
   scroll-behavior: smooth !important;
-}
-
-
-
-
-.cursor {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 17px;
-  height: 17px;
-  border-radius: 50%;
-  background-color: var(--courserColor);
-  z-index: 2000;
-  user-select: none;
-  pointer-events: none;
 }

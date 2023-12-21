@@ -1,0 +1,27 @@
+.cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: var(--courserColor);
+    z-index: 2000;
+    user-select: none;
+    pointer-events: none;
+    transition: transform 0.2s ease;
+    transform-origin: center center;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.grow,
+.grow-small {
+    transform: scale(7);
+    background-color: var(--courserollowerColor);
+    mix-blend-mode: difference;
+}
+
+.grow-small {
+    transform: scale(2.5);
+}
