@@ -16,7 +16,7 @@ import project5 from '../../asset/projects/movie-adda.png';
 import Image from 'next/image';
 import Services from '../Services/Services';
 
-export default function Projects({ SkillsRef, projectsRef, contactRef }) {
+export default function Projects() {
 
     useGSAP(
         () => {
@@ -43,11 +43,11 @@ export default function Projects({ SkillsRef, projectsRef, contactRef }) {
     return (
         <>
 
-            <div className="firstContainer" ref={SkillsRef}>
+            <div className="firstContainer">
                 <Services />
             </div>
 
-            <div className="container" ref={projectsRef} >
+            <div className="container">
 
                 <section className="panel ">
                     <p className='text-8xl content cursor-scale'>My Projects</p>
@@ -161,7 +161,7 @@ export default function Projects({ SkillsRef, projectsRef, contactRef }) {
 
             </div >
 
-            <div className="lastContainer" ref={contactRef}>
+            <div className="lastContainer">
                 <ContactUs />
             </div>
 

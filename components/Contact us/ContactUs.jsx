@@ -36,7 +36,7 @@ export default function ContactUs() {
                 </div>
 
                 <section id="section">
-                    <Image src={svg} className='p-5' style={{ width: '100%', maxWidth: '70vw' }} />
+                    <Image src={svg} className='p-5' style={{ width: '100%', maxWidth: '70vw' }} alt=' ' />
                 </section>
             </div>
         </>

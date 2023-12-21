@@ -1,10 +1,11 @@
+import Image from "next/image";
 
 
 export default function Card({ img, link }) {
     return (
         <a href={link} target="_blank">
             <div className="p-2 m-2 clicked">
-                <img
+                <Image
                     src={img}
                     alt='skill'
                     loading="lazy"
