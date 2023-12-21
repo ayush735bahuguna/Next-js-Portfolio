@@ -5,15 +5,16 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 import './projects.css';
 
-import Skills from '../skills/Skills';
 import ContactUs from '../Contact us/ContactUs';
 
+import project from '../../asset/home images/project.svg';
 import project1 from '../../asset/projects/quick-link.png';
 import project2 from '../../asset/projects/Magic-pictures.png';
 import project3 from '../../asset/projects/Social-link.png';
 import project4 from '../../asset/projects/chat-link.png';
 import project5 from '../../asset/projects/movie-adda.png';
 import Image from 'next/image';
+import Services from '../Services/Services';
 
 export default function Projects({ SkillsRef, projectsRef, contactRef }) {
 
@@ -43,14 +44,16 @@ export default function Projects({ SkillsRef, projectsRef, contactRef }) {
         <>
 
             <div className="firstContainer" ref={SkillsRef}>
-                <Skills />
+                <Services />
             </div>
 
             <div className="container" ref={projectsRef} >
 
                 <section className="panel ">
-                    <div className="content">Projects</div>
-                    <div className="box">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis amet voluptatem assumenda impedit ipsam odit quam quidem necessitatibus ipsa, nobis soluta facere beatae veritatis debitis in dolorem dolorum. Maxime, tempore!</div>
+                    <p className='text-8xl content'>Projects</p>
+                    <Image src={project} alt='' style={{ width: '55vw' }} />
+                    <div className="box">
+                    </div>
                 </section>
 
                 <section className="panel ">
