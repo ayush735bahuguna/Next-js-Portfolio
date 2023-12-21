@@ -1,6 +1,6 @@
 import Projects from '@/components/projects/Projects'
 import Skills from '@/components/skills/Skills'
-import { ArrowBigUp, ArrowUpFromDot, Github, GithubIcon, Instagram, Linkedin } from 'lucide-react'
+import { ArrowUpFromDot, GithubIcon, Instagram, Linkedin } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import Cursor from '@/components/Cursor/Cursor'
 export default function page() {
@@ -18,7 +18,7 @@ export default function page() {
         </div>
 
         <span className='text-9xl font-semibold cursor-scale'>Hey,</span>
-        <span className='text-9xl font-semibold cursor-scale'>I'm Ayush</span>
+        <span className='text-9xl font-semibold cursor-scale'>I&apos;m Ayush</span>
         <p className='text-5xl font-semibold cursor-scale small' style={{ paddingLeft: '30%', paddingRight: '10%' }}>- a Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, fugiat!</p>
       </div>
       <Skills />
