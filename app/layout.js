@@ -1,7 +1,7 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/components/theme-provider'
-import Header from '@/components/Header/Header'
+import Navbar from '@/components/Header/Navbar/Navbar';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
         disableTransitionOnChange
       >
         <body className={inter.className}>
-          <Header />
+          <Navbar />
           {children}
         </body>
       </ThemeProvider>
