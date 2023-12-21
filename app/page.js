@@ -1,5 +1,4 @@
 import Projects from '@/components/projects/Projects'
-import React, { useRef } from 'react'
 import Skills from '@/components/skills/Skills'
 import { ArrowBigUp, ArrowUpFromDot, Github, GithubIcon, Instagram, Linkedin } from 'lucide-react'
 import { Button } from '@/components/ui/button'
