@@ -1,3 +1,4 @@
+"use client"
 import gsap from 'gsap';
 import './Cursor.css'
 import { useGSAP } from '@gsap/react';
