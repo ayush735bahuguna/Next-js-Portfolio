@@ -25,8 +25,9 @@ export default function Skills() {
     return (
         <section id='About'>
             <p className='text-8xl cursor-scale p-5'>About me</p>
-            <div style={{ width: '100vw' }} className='TextAnimationStop flex items-start justify-around p-4'>
-                <p className='w-1/3'>
+
+            <div style={{ width: '100vw' }} className='TextAnimationStop flex items-strech justify-around p-4 flex-wrap'>
+                <p className='sm:w-1/3 pt-5'>
                     <p className='text-5xl cursor-scale small'>Get to know me</p>
                     <br />
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dolore esse illo voluptatum ipsam, eligendi quibusdam hic ipsa minima accusantium commodi corporis quam recusandae odit, similique aspernatur enim cumque distinctio.
@@ -35,7 +36,7 @@ export default function Skills() {
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dolore esse illo voluptatum ipsam, eligendi quibusdam hic ipsa minima accusantium commodi corporis quam recusandae odit, similique aspernatur enim cumque distinctio.
                 </p>
 
-                <div className='w-1/2'>
+                <div className='sm:w-1/2 pt-5'>
                     <p className='text-5xl cursor-scale small pb-5'>My skills and tool</p>
                     <div className='flex items-center justify-start flex-wrap' >
                         {Skills?.map((Skill, index) => {
@@ -46,6 +47,7 @@ export default function Skills() {
                     </div>
                 </div>
             </div>
+
         </section>
 
     )

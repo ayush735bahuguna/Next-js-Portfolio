@@ -8,7 +8,7 @@ import ServicesImg from '../../asset/home images/Services.svg'
 export default function Services() {
     return (
         <section className='p-5'>
-            <p className='text-8xl cursor-scale sm:w-2/3'>Here’s what you can expect from me...</p>
+            <p className='text-8xl cursor-scale lg:w-2/3'>Here’s what you can expect from me...</p>
 
             <div className='flex justify-between items-start flex-wrap'>
 
