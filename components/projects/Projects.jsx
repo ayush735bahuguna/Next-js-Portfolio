@@ -65,7 +65,7 @@ export default function Projects() {
                 />
 
                 <PanelSection
-                    Name={'Movie-adda'}
+                    Name={'MERN Chat App'}
                     Description={' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, sit?'}
                     imgUrl={project4}
                     url={'https://movie-adda.netlify.app/'}
@@ -80,7 +80,7 @@ export default function Projects() {
 
 
                 <PanelSection
-                    Name={'MERN Chat App'}
+                    Name={'Movie-adda'}
                     Description={' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, sit?'}
                     imgUrl={project5}
                     url={'https://chat-link.netlify.app/'}

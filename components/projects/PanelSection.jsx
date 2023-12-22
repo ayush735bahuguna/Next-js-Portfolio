@@ -6,7 +6,7 @@ export default function PanelSection({ Name, url, Description, imgUrl }) {
     return (
         <section className="panel">
             <Link href={url} target='_blank'>
-                <div className='cursor-scale navigate' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', overflowY: "scroll", height: '90vh', flexDirection: 'column', transition: 'all 0.1s ease' }}>
+                <div className='cursor-scale navigate hover:scale-105' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', overflowY: "scroll", height: '90vh', flexDirection: 'column', transition: 'all 0.1s ease' }}>
 
 
                     <div className="box">
