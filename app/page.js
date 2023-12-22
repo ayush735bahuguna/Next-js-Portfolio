@@ -6,11 +6,11 @@ export default function page() {
 
 
   return (
-    <>
+    <main>
       <Cursor />
       <Hero />
       <Skills />
       <Projects />
-    </>
+    </main>
   )
 }

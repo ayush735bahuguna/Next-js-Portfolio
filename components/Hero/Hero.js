@@ -24,15 +24,15 @@ export default function Hero() {
     return (
         <div className='flex flex-col' style={{ paddingLeft: '10%', paddingTop: '10%', minHeight: '100vh', position: 'relative' }}>
             <div className='p-5 gap-4' style={{ position: 'fixed', top: '10px', right: '0px', width: '100vw', height: '10px', display: 'flex', alignItems: 'center', justifyContent: 'end', zIndex: '999' }}>
-                <GithubIcon size={'35px'} strokeWidth={1.3} className='cursor-scale small' />
-                <Instagram size={'35px'} strokeWidth={1.3} className='cursor-scale small' />
-                <Linkedin size={'35px'} strokeWidth={1.3} className='cursor-scale small' />
+                <GithubIcon size={'35px'} strokeWidth={1.3} className='cursor-scale small   cursor-pointer' />
+                <Instagram size={'35px'} strokeWidth={1.3} className='cursor-scale small  cursor-pointer' />
+                <Linkedin size={'35px'} strokeWidth={1.3} className='cursor-scale small  cursor-pointer' />
             </div>
 
-            <span className='text-9xl font-semibold cursor-scale'>Hey,</span>
-            <span className='text-9xl font-semibold cursor-scale'>I&apos;m
+            <span className='text-9xl font-semibold cursor-scale '>Hey,</span>
+            <span className='text-9xl font-semibold cursor-scale '>I&apos;m
 
-                <span className="logo text-9xl"
+                <span id="Ayush" className="logo text-9xl"
                     style={{
                         position: 'fixed', zIndex: '999'
                     }}>&nbsp;Ayush</span>

@@ -9,7 +9,7 @@ import Image from 'next/image'
 
 export default function ContactUs() {
     return (
-        <>
+        <section style={{ paddingBottom: '70px' }}>
             <p className='text-8xl p-5 cursor-scale'>Ready? <br />Let’s get started.</p>
             <div id='layout'>
 
@@ -39,7 +39,7 @@ export default function ContactUs() {
                     <Image src={svg} className='p-5' style={{ width: '100%', maxWidth: '70vw' }} alt=' ' />
                 </section>
             </div>
-        </>
+        </section>
 
     )
 }
