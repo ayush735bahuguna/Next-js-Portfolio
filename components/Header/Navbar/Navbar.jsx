@@ -7,18 +7,16 @@ import {
     TooltipTrigger,
 } from "@/components/ui/tooltip"
 import ModeToggle from '../ModeToggle'
-import { Button } from '@/components/ui/button'
+import Link from 'next/link'
 
 
 export default function Navbar() {
-    const ScrollToTop = () => {
-        window.scrollTo(0, 0);
-    }
+
     return (
-        <>
-            <Button size={'icon'} variant={'ghost'} style={{ position: 'fixed', bottom: '20px', right: '20px', zIndex: '99' }} className='rounded-full' onClick={() => ScrollToTop()}>
+        <section>
+            <Link href={"#Hero"} style={{ position: 'fixed', bottom: '30px', right: '30px', zIndex: '99' }} className='rounded-full'>
                 <ArrowUpFromDot />
-            </Button>
+            </Link>
 
             <nav className='cursor-scale small' style={{ width: '100vw', position: 'fixed', bottom: '0px', height: '100px', display: 'flex', alignItems: 'center', zIndex: '99', justifyContent: 'center' }}>
 
@@ -26,50 +24,49 @@ export default function Navbar() {
                 <div className='bg-slate-100 dark:bg-slate-800' style={{ borderRadius: '20px', width: 'fit-content', boxShadow: '0 2px 10px rgba(0, 0, 0, .1)', padding: '5px 10px' }}>
                     <ul style={{ display: 'flex', textDecoration: 'none', flexDirection: 'row', listStyleType: 'none', justifyContent: 'center', alignItems: 'center', cursor: 'pointer', margin: '0px', padding: '0px' }}>
                         <TooltipProvider>
-                            <Tooltip>
-                                <TooltipTrigger asChild>
-                                    <li className='m-2 mx-3'> <Home /> </li>
-                                </TooltipTrigger>
-                                <TooltipContent>
-                                    <p>Home </p>
-                                </TooltipContent>
-                            </Tooltip>
+                            <Link href={'#Hero'}>
+                                <Tooltip>
+                                    <TooltipTrigger asChild>
+                                        <li className='m-2 mx-3'> <Home /> </li>
+                                    </TooltipTrigger>
+                                    <TooltipContent>
+                                        <p>Home </p>
+                                    </TooltipContent>
+                                </Tooltip>
+                            </Link>
 
-                            <Tooltip>
-                                <TooltipTrigger asChild>
-                                    <li className='m-2 mx-3'> <User /></li>
-                                </TooltipTrigger>
-                                <TooltipContent>
-                                    <p>About me </p>
-                                </TooltipContent>
-                            </Tooltip>
+                            <Link href={'#About'}>
+                                <Tooltip>
+                                    <TooltipTrigger asChild>
+                                        <li className='m-2 mx-3'> <User /></li>
+                                    </TooltipTrigger>
+                                    <TooltipContent>
+                                        <p>About me </p>
+                                    </TooltipContent>
+                                </Tooltip>
+                            </Link>
 
-                            <Tooltip>
-                                <TooltipTrigger asChild>
-                                    <li className='m-2 mx-3'><Sparkles /></li>
-                                </TooltipTrigger>
-                                <TooltipContent>
-                                    <p>Skills </p>
-                                </TooltipContent>
-                            </Tooltip>
+                            <Link href={"#Projects"}>
+                                <Tooltip>
+                                    <TooltipTrigger asChild>
+                                        <li className='m-2 mx-3'><FileJson2 /></li>
+                                    </TooltipTrigger>
+                                    <TooltipContent>
+                                        <p>Projects </p>
+                                    </TooltipContent>
+                                </Tooltip>
+                            </Link>
 
-                            <Tooltip>
-                                <TooltipTrigger asChild>
-                                    <li className='m-2 mx-3'><FileJson2 /></li>
-                                </TooltipTrigger>
-                                <TooltipContent>
-                                    <p>Projects </p>
-                                </TooltipContent>
-                            </Tooltip>
-
-                            <Tooltip>
-                                <TooltipTrigger asChild>
-                                    <li className='m-2 mx-3'><MessageSquareShare /></li>
-                                </TooltipTrigger>
-                                <TooltipContent>
-                                    <p>Contact </p>
-                                </TooltipContent>
-                            </Tooltip>
+                            <Link href={"#Contact"}>
+                                <Tooltip>
+                                    <TooltipTrigger asChild>
+                                        <li className='m-2 mx-3'><MessageSquareShare /></li>
+                                    </TooltipTrigger>
+                                    <TooltipContent>
+                                        <p>Contact </p>
+                                    </TooltipContent>
+                                </Tooltip>
+                            </Link>
 
                             <ModeToggle />
                         </TooltipProvider>
@@ -77,7 +74,7 @@ export default function Navbar() {
                 </div>
 
             </nav>
-        </>
+        </section>
 
     )
 }

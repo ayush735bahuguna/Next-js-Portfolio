@@ -15,6 +15,7 @@ import project4 from '../../asset/projects/chat-link.png';
 import project5 from '../../asset/projects/movie-adda.png';
 import Image from 'next/image';
 import Services from '../Services/Services';
+import PanelSection from './PanelSection';
 
 export default function Projects() {
 
@@ -41,13 +42,13 @@ export default function Projects() {
     );
 
     return (
-        <>
+        <section>
 
             <div className="firstContainer">
                 <Services />
             </div>
 
-            <div className="container">
+            <div className="container" id='Projects'>
 
                 <section className="panel ">
                     <p className='text-8xl content cursor-scale'>My Projects</p>
@@ -56,86 +57,48 @@ export default function Projects() {
                     </div>
                 </section>
 
-                <section className="panel ">
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', overflowY: "scroll", height: '90vh', flexDirection: 'column' }}>
+                <PanelSection
+                    Name={'MERN Notes App'}
+                    Description={' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, sit?'}
+                    imgUrl={project1}
+                    url={'https://note-quick.netlify.app/'}
+                />
 
-                        <div className="box">
-                            <Image src={project1} style={{ width: '100%' }} alt='' />
-                        </div>
-                        <div className="text-4xl m-5 content">
-                            MERN Notes App
-                        </div>
+                <PanelSection
+                    Name={'Movie-adda'}
+                    Description={' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, sit?'}
+                    imgUrl={project4}
+                    url={'https://movie-adda.netlify.app/'}
+                />
 
-                    </div>
-
-
-                </section>
-                <section className="panel ">
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', overflowY: "scroll", height: '90vh', flexDirection: 'column' }}>
-
-                        <div className="box">
-                            <Image src={project2} style={{ width: '100%' }} alt='' />
-                        </div>
-                        <div className="text-4xl m-5 content">
-                            Magic Pictures
-                        </div>
-
-                    </div>
+                <PanelSection
+                    Name={'Social Media App'}
+                    Description={' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, sit?'}
+                    imgUrl={project3}
+                    url={'https://social-link-app.netlify.app/'}
+                />
 
 
-                </section>
-                <section className="panel ">
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', overflowY: "scroll", height: '90vh', flexDirection: 'column' }}>
+                <PanelSection
+                    Name={'MERN Chat App'}
+                    Description={' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, sit?'}
+                    imgUrl={project5}
+                    url={'https://chat-link.netlify.app/'}
+                />
 
-                        <div className="box">
-                            <Image src={project3} style={{ width: '100%' }} alt='' />
-                        </div>
-                        <div className="text-4xl m-5 content">
-                            Social Media App
-                        </div>
-
-                    </div>
-
-
-                </section>
-                <section className="panel ">
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', overflowY: "scroll", height: '90vh', flexDirection: 'column' }}>
-
-                        <div className="box">
-                            <Image src={project5} style={{ width: '100%' }} alt='' />
-                        </div>
-                        <div className="text-4xl m-5 content">
-                            Movie-adda
-                        </div>
-
-                    </div>
-
-
-                </section>
-                <section className="panel ">
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', overflowY: "scroll", height: '90vh', flexDirection: 'column' }}>
-
-                        <div className="box">
-                            <Image src={project4} style={{ width: '100%' }} alt='' />
-                        </div>
-                        <div className="text-4xl m-5 content">
-                            MERN Chat App
-                        </div>
-
-                    </div>
-
-
-                </section>
-
-
-
+                <PanelSection
+                    Name={'Magic Pictures'}
+                    Description={' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, sit?'}
+                    imgUrl={project2}
+                    url={'https://magic-pictures.netlify.app/'}
+                />
             </div >
 
             <div className="lastContainer">
                 <ContactUs />
             </div>
 
-        </>
+        </section>
     )
 }
 

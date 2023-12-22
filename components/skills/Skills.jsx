@@ -19,11 +19,11 @@ export default function Skills() {
         { "name": "Github", },
         { "name": "Git", },
         { "name": "GSAP", },
+        { "name": "VS code", },
 
     ]
-
     return (
-        <>
+        <section id='About'>
             <p className='text-8xl cursor-scale p-5'>About me</p>
             <div style={{ width: '100vw' }} className='TextAnimationStop flex items-start justify-around p-4'>
                 <p className='w-1/3'>
@@ -46,7 +46,7 @@ export default function Skills() {
                     </div>
                 </div>
             </div>
-        </>
+        </section>
 
     )
 }

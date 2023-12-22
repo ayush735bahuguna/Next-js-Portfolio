@@ -16,7 +16,8 @@
 }
 
 .grow,
-.grow-small {
+.grow-small,
+.OpenProject {
     transform: scale(7);
     background-color: var(--courserollowerColor);
     mix-blend-mode: difference;
@@ -24,4 +25,9 @@
 
 .grow-small {
     transform: scale(2.5);
+}
+
+.Openproject {
+    transform: scale(2.5);
+    background-color: blueviolet;
 }

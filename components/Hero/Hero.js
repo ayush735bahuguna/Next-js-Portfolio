@@ -3,6 +3,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { GithubIcon, Instagram, Linkedin } from "lucide-react";
+import Link from "next/link";
 
 export default function Hero() {
 
@@ -22,11 +23,17 @@ export default function Hero() {
     }, [])
 
     return (
-        <div className='flex flex-col' style={{ paddingLeft: '10%', paddingTop: '10%', minHeight: '100vh', position: 'relative' }}>
+        <div id="Hero" className='flex flex-col' style={{ paddingLeft: '10%', paddingTop: '10%', minHeight: '100vh', position: 'relative' }}>
             <div className='p-5 gap-4' style={{ position: 'fixed', top: '10px', right: '0px', width: '100vw', height: '10px', display: 'flex', alignItems: 'center', justifyContent: 'end', zIndex: '999' }}>
-                <GithubIcon size={'35px'} strokeWidth={1.3} className='cursor-scale small   cursor-pointer' />
-                <Instagram size={'35px'} strokeWidth={1.3} className='cursor-scale small  cursor-pointer' />
-                <Linkedin size={'35px'} strokeWidth={1.3} className='cursor-scale small  cursor-pointer' />
+                <Link href={'https://github.com/ayush735bahuguna'} target="_blank">
+                    <GithubIcon size={'35px'} strokeWidth={1.3} className='cursor-scale small   cursor-pointer' />
+                </Link>
+                <Link href={'https://www.linkedin.com/in/ayushbahuguna'} target="_blank">
+                    <Linkedin size={'35px'} strokeWidth={1.3} className='cursor-scale small  cursor-pointer' />
+                </Link>
+                <Link href={'https://www.instagram.com/ayush.jsx/?igshid=MzNlNGNkZWQ4Mg%3D%3D'} target="_blank">
+                    <Instagram size={'35px'} strokeWidth={1.3} className='cursor-scale small  cursor-pointer' />
+                </Link>
             </div>
 
             <span className='text-9xl font-semibold cursor-scale '>Hey,</span>

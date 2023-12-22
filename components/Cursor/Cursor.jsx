@@ -23,7 +23,6 @@ export default function Cursor() {
             }
         });
 
-
         window.addEventListener('mousemove', e => {
             mouseX = e.clientX;
             mouseY = e.clientY;
@@ -33,12 +32,19 @@ export default function Cursor() {
             link.addEventListener('mouseleave', () => {
                 cur.classList.remove('grow')
                 cur.classList.remove('grow-small')
+                cur.classList.remove('Openproject');
             });
             link.addEventListener('mousemove', () => {
                 cur.classList.add('grow');
+
                 if (link.classList.contains('small')) {
                     cur.classList.remove('grow')
+                    cur.classList.remove('Openproject');
                     cur.classList.add('grow-small');
+                } else if (link.classList.contains('navigate')) {
+                    cur.classList.remove('grow')
+                    cur.classList.remove('grow-small');
+                    cur.classList.add('Openproject');
                 }
             });
         });

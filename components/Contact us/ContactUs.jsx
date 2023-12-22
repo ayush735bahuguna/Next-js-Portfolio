@@ -9,9 +9,9 @@ import Image from 'next/image'
 
 export default function ContactUs() {
     return (
-        <section style={{ paddingBottom: '70px' }}>
-            <p className='text-8xl p-5 cursor-scale'>Ready? <br />Let’s get started.</p>
+        <section id='Contact'>
             <div id='layout'>
+                <p id="section" className='text-8xl p-5 cursor-scale'>Ready? <br />Let’s get started.</p>
 
                 <div id='form'>
                     <form target="_self"
@@ -35,9 +35,9 @@ export default function ContactUs() {
                     </form>
                 </div>
 
-                <section id="section">
+                {/* <section >
                     <Image src={svg} className='p-5' style={{ width: '100%', maxWidth: '70vw' }} alt=' ' />
-                </section>
+                </section> */}
             </div>
         </section>
 
