@@ -23,15 +23,13 @@ body {
 
 .panel {
     width: 100vw;
+    margin: 0px 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
 }
 
-.box {
-    width: 40vw;
-}
+
 
 .content {
     width: 40vw;

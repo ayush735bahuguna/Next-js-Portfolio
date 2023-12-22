@@ -50,11 +50,9 @@ export default function Projects() {
 
             <div className="container" id='Projects'>
 
-                <section className="panel ">
-                    <p className='text-8xl content cursor-scale'>My Projects</p>
-                    <Image src={project} alt='' style={{ width: '55vw' }} />
-                    <div className="box">
-                    </div>
+                <section className="panel" style={{ flexWrap: 'wrap', width: '100vw' }}>
+                    <div className='text-8xl content cursor-scale '>My <br /> Projects</div>
+                    <Image src={project} alt='' style={{ width: '100vw', height: 'auto' }} />
                 </section>
 
                 <PanelSection
