@@ -27,7 +27,19 @@
     transform: scale(2.5);
 }
 
+
+
 .Openproject {
-    transform: scale(2.5);
-    background-color: blueviolet;
+    transform: scale(3);
+    padding: 12px;
+}
+
+.openHidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.openVisible {
+    visibility: visible;
+    opacity: 1;
 }

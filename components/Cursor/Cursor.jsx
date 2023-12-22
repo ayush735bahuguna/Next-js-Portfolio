@@ -2,12 +2,15 @@
 import gsap from 'gsap';
 import './Cursor.css'
 import { useGSAP } from '@gsap/react';
+import { ArrowUpRight, ArrowUpRightSquare } from 'lucide-react';
 
 export default function Cursor() {
 
     useGSAP(() => {
         var cur = document.querySelector('.cursor');
         var curScale = document.querySelectorAll('.cursor-scale');
+        var navigate = document.querySelectorAll('.navigate');
+        var open = document.querySelector('#open');
         var mouseX = 0;
         var mouseY = 0;
 
@@ -49,9 +52,24 @@ export default function Cursor() {
             });
         });
 
+        navigate.forEach((elem) => {
+            elem.addEventListener('mousemove', () => {
+                open.classList.add('openVisible');
+                open.classList.remove('openHidden');
+            })
+            elem.addEventListener('mouseleave', () => {
+                open.classList.add('openHidden');
+                open.classList.remove('openVisible');
+            })
+        })
+
     }, [])
 
     return (
-        <div className="cursor"></div>
+        <div className="cursor flex justify-center items-center">
+            <div id="open" className='openHidden text-white dark:text-black'>
+                <ArrowUpRight />
+            </div>
+        </div>
     )
 }
