@@ -62,14 +62,8 @@ export default function Projects() {
                         <div className="box">
                             <Image src={project1} style={{ width: '100%' }} alt='' />
                         </div>
-                        <div className="content">
-                            Project Features :<br />
-                            1️⃣ Create, Update, Delete, Search Notes: Seamlessly manage your notes with intuitive CRUD operations. <br />
-                            2️⃣ Dark Mode: Embrace a sleek and stylish interface with Dark Mode feature.<br />
-                            3️⃣ Layout Change: Customize your workspace with different layout options, ensuring a personalized and comfortable user experience. <br />
-                            4️⃣ Custom Login / Sign-Up Page <br />
-                            <br />
-                            🔗 **Check it out here:** [ https://lnkd.in/d379p3T3 ]
+                        <div className="text-4xl m-5 content">
+                            MERN Notes App
                         </div>
 
                     </div>
@@ -82,14 +76,8 @@ export default function Projects() {
                         <div className="box">
                             <Image src={project2} style={{ width: '100%' }} alt='' />
                         </div>
-                        <div className="content">
-                            Project Features :<br />
-                            1️⃣ Create, Update, Delete, Search Notes: Seamlessly manage your notes with intuitive CRUD operations. <br />
-                            2️⃣ Dark Mode: Embrace a sleek and stylish interface with Dark Mode feature.<br />
-                            3️⃣ Layout Change: Customize your workspace with different layout options, ensuring a personalized and comfortable user experience. <br />
-                            4️⃣ Custom Login / Sign-Up Page <br />
-                            <br />
-                            🔗 **Check it out here:** [ https://lnkd.in/d379p3T3 ]
+                        <div className="text-4xl m-5 content">
+                            Magic Pictures
                         </div>
 
                     </div>
@@ -102,14 +90,8 @@ export default function Projects() {
                         <div className="box">
                             <Image src={project3} style={{ width: '100%' }} alt='' />
                         </div>
-                        <div className="content">
-                            Project Features :<br />
-                            1️⃣ Create, Update, Delete, Search Notes: Seamlessly manage your notes with intuitive CRUD operations. <br />
-                            2️⃣ Dark Mode: Embrace a sleek and stylish interface with Dark Mode feature.<br />
-                            3️⃣ Layout Change: Customize your workspace with different layout options, ensuring a personalized and comfortable user experience. <br />
-                            4️⃣ Custom Login / Sign-Up Page <br />
-                            <br />
-                            🔗 **Check it out here:** [ https://lnkd.in/d379p3T3 ]
+                        <div className="text-4xl m-5 content">
+                            Social Media App
                         </div>
 
                     </div>
@@ -122,14 +104,8 @@ export default function Projects() {
                         <div className="box">
                             <Image src={project5} style={{ width: '100%' }} alt='' />
                         </div>
-                        <div className="content">
-                            Project Features :<br />
-                            1️⃣ Create, Update, Delete, Search Notes: Seamlessly manage your notes with intuitive CRUD operations. <br />
-                            2️⃣ Dark Mode: Embrace a sleek and stylish interface with Dark Mode feature.<br />
-                            3️⃣ Layout Change: Customize your workspace with different layout options, ensuring a personalized and comfortable user experience. <br />
-                            4️⃣ Custom Login / Sign-Up Page <br />
-                            <br />
-                            🔗 **Check it out here:** [ https://lnkd.in/d379p3T3 ]
+                        <div className="text-4xl m-5 content">
+                            Movie-adda
                         </div>
 
                     </div>
@@ -142,14 +118,8 @@ export default function Projects() {
                         <div className="box">
                             <Image src={project4} style={{ width: '100%' }} alt='' />
                         </div>
-                        <div className="content">
-                            Project Features :<br />
-                            1️⃣ Create, Update, Delete, Search Notes: Seamlessly manage your notes with intuitive CRUD operations. <br />
-                            2️⃣ Dark Mode: Embrace a sleek and stylish interface with Dark Mode feature.<br />
-                            3️⃣ Layout Change: Customize your workspace with different layout options, ensuring a personalized and comfortable user experience. <br />
-                            4️⃣ Custom Login / Sign-Up Page <br />
-                            <br />
-                            🔗 **Check it out here:** [ https://lnkd.in/d379p3T3 ]
+                        <div className="text-4xl m-5 content">
+                            MERN Chat App
                         </div>
 
                     </div>
