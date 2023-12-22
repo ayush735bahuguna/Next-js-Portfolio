@@ -14,7 +14,8 @@ export default function Hero() {
                 trigger: '.hero',
                 start: 'top top',
                 end: "100",
-                scrub: 0.5
+                scrub: 0.5,
+                ease: "power1.inOut",
             }
         })
 
