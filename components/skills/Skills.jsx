@@ -1,5 +1,7 @@
 import './Skills.css'
 import { Button } from '../ui/button';
+import { Download } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Skills() {
     const Skills = [
@@ -36,15 +38,21 @@ export default function Skills() {
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dolore esse illo voluptatum ipsam, eligendi quibusdam hic ipsa minima accusantium commodi corporis quam recusandae odit, similique aspernatur enim cumque distinctio.
                 </p>
 
-                <div className='sm:w-1/2 pt-5'>
-                    <p className='text-5xl cursor-scale small pb-5'>My skills and tool</p>
-                    <div className='flex items-center justify-start flex-wrap' >
-                        {Skills?.map((Skill, index) => {
-                            return (
-                                <Button key={index} variant={'outline'} className="m-2">{Skill.name}</Button>
-                            )
-                        })}
+                <div className='sm:w-1/2 p-5 flex items-start justify-between flex-col'>
+                    <div>
+                        <p className='text-5xl cursor-scale small m-2'>My skills and tool</p>
+                        <div className='flex items-center justify-start flex-wrap' >
+                            {Skills?.map((Skill, index) => {
+                                return (
+                                    <Button key={index} variant={'outline'} className="m-2">{Skill.name}</Button>
+                                )
+                            })}
+                        </div>
                     </div>
+                    <Link href={'https://drive.google.com/file/d/1hegdSp6lI4kw-sEzMG6tnjKGj3JYP0oq/view?usp=sharing'} target='_blank'>
+                        <Button variant={'outline'} className={'m-2'} > <Download /> &nbsp; Resume </Button>
+                    </Link>
+
                 </div>
             </div>
 

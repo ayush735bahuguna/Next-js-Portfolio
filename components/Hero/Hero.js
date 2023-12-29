@@ -11,8 +11,9 @@ export default function Hero() {
         gsap.registerPlugin(ScrollTrigger);
         gsap.to('.logo', {
             fontSize: '2rem',
-            top: '10px',
+            top: '18px',
             left: '10px',
+            lineHeight: '25px',
             scrollTrigger: {
                 trigger: '.hero',
                 start: 'top top',
@@ -36,21 +37,14 @@ export default function Hero() {
                 </Link>
             </div>
 
-            <span className='text-9xl font-semibold cursor-scale '>Hey,</span>
-            <span className='text-9xl font-semibold cursor-scale '>I&apos;m
+            <span className='HeroText font-semibold cursor-scale '>Hey,</span>
+            <span className='HeroText font-semibold cursor-scale '>I&apos;m
 
-                <span id="Ayush" className="logo text-9xl"
-                    style={{
-                        position: 'fixed', zIndex: '999'
-                    }}>&nbsp;Ayush</span>
-                <span className="text-9xl"
-                    style={{
-                        mixBlendMode: 'none', WebkitTextStroke: '3px Black',
-                        WebkitTextFillColor: 'transparent'
-                    }}>&nbsp;Ayush</span>
+                <span id="Ayush" className="HeroText logo" style={{ position: 'fixed', zIndex: '999' }}>&nbsp;Ayush</span>
+                <span id="AyushStroke" className="HeroTextStroke" style={{ mixBlendMode: 'none', WebkitTextFillColor: 'transparent' }}>&nbsp;Ayush</span>
 
             </span>
-            <p className='text-5xl font-semibold cursor-scale small' style={{ paddingLeft: '30%', paddingRight: '10%' }}>- a Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, fugiat!</p>
+            <p className='HeroTextSmall font-semibold cursor-scale small' style={{ paddingLeft: '30%', paddingRight: '10%' }}>- a Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, fugiat!</p>
         </div>
     )
 }

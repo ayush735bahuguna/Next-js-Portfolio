@@ -16,6 +16,7 @@ import project5 from '../../asset/projects/movie-adda.png';
 import Image from 'next/image';
 import Services from '../Services/Services';
 import PanelSection from './PanelSection';
+import PanelSectionSm from './PanelSectionSm';
 
 export default function Projects() {
 
@@ -42,61 +43,113 @@ export default function Projects() {
     );
 
     return (
-        <section>
-
-            <div className="firstContainer">
+        <>
+            <section className='sm:hidden'>
                 <Services />
-            </div>
+                <section>
+                    <div id='Projects'>
 
-            <div className="container" id='Projects'>
+                        <section style={{ flexWrap: 'wrap', width: '100vw' }}>
+                            <div className='text-8xl content cursor-scale '>My <br /> Projects</div>
+                            <Image src={project} alt='' style={{ width: '100vw', height: 'auto', margin: '50px 10px' }} />
+                        </section>
 
-                <section className="panel" style={{ flexWrap: 'wrap', width: '100vw' }}>
-                    <div className='text-8xl content cursor-scale '>My <br /> Projects</div>
-                    <Image src={project} alt='' style={{ width: '100vw', height: 'auto' }} />
+                        <PanelSectionSm
+                            Name={'MERN Notes App'}
+                            Description={' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, sit?'}
+                            imgUrl={project1}
+                            url={'https://note-quick.netlify.app/'}
+                        />
+
+                        <PanelSectionSm
+                            Name={'MERN Chat App'}
+                            Description={' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, sit?'}
+                            imgUrl={project4}
+                            url={'https://chat-link.netlify.app/'}
+                        />
+
+                        <PanelSectionSm
+                            Name={'Social Media App'}
+                            Description={' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, sit?'}
+                            imgUrl={project3}
+                            url={'https://social-link-app.netlify.app/'}
+                        />
+
+
+                        <PanelSectionSm
+                            Name={'Movie-adda'}
+                            Description={' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, sit?'}
+                            imgUrl={project5}
+                            url={'https://movie-adda.netlify.app/'}
+                        />
+
+                        <PanelSectionSm
+                            Name={'Magic Pictures'}
+                            Description={' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, sit?'}
+                            imgUrl={project2}
+                            url={'https://magic-pictures.netlify.app/'}
+                        />
+                    </div >
                 </section>
-
-                <PanelSection
-                    Name={'MERN Notes App'}
-                    Description={' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, sit?'}
-                    imgUrl={project1}
-                    url={'https://note-quick.netlify.app/'}
-                />
-
-                <PanelSection
-                    Name={'MERN Chat App'}
-                    Description={' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, sit?'}
-                    imgUrl={project4}
-                    url={'https://movie-adda.netlify.app/'}
-                />
-
-                <PanelSection
-                    Name={'Social Media App'}
-                    Description={' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, sit?'}
-                    imgUrl={project3}
-                    url={'https://social-link-app.netlify.app/'}
-                />
-
-
-                <PanelSection
-                    Name={'Movie-adda'}
-                    Description={' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, sit?'}
-                    imgUrl={project5}
-                    url={'https://chat-link.netlify.app/'}
-                />
-
-                <PanelSection
-                    Name={'Magic Pictures'}
-                    Description={' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, sit?'}
-                    imgUrl={project2}
-                    url={'https://magic-pictures.netlify.app/'}
-                />
-            </div >
-
-            <div className="lastContainer">
                 <ContactUs />
-            </div>
+            </section>
 
-        </section>
+            <section className='max-sm:hidden' >
+
+                <div className="firstContainer">
+                    <Services />
+                </div>
+
+                <div className="container" id='Projects'>
+
+                    <section className="panel" style={{ flexWrap: 'wrap', width: '100vw' }}>
+                        <div className='text-8xl content cursor-scale '>My <br /> Projects</div>
+                        <Image src={project} alt='' style={{ width: '100vw', height: 'auto' }} />
+                    </section>
+
+                    <PanelSection
+                        Name={'MERN Notes App'}
+                        Description={' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, sit?'}
+                        imgUrl={project1}
+                        url={'https://note-quick.netlify.app/'}
+                    />
+
+                    <PanelSection
+                        Name={'MERN Chat App'}
+                        Description={' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, sit?'}
+                        imgUrl={project4}
+                        url={'https://chat-link.netlify.app/'}
+                    />
+
+                    <PanelSection
+                        Name={'Social Media App'}
+                        Description={' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, sit?'}
+                        imgUrl={project3}
+                        url={'https://social-link-app.netlify.app/'}
+                    />
+
+
+                    <PanelSection
+                        Name={'Movie-adda'}
+                        Description={' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, sit?'}
+                        imgUrl={project5}
+                        url={'https://movie-adda.netlify.app/'}
+                    />
+
+                    <PanelSection
+                        Name={'Magic Pictures'}
+                        Description={' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, sit?'}
+                        imgUrl={project2}
+                        url={'https://magic-pictures.netlify.app/'}
+                    />
+                </div >
+
+                <div className="lastContainer">
+                    <ContactUs />
+                </div>
+
+            </section>
+        </>
     )
 }
 

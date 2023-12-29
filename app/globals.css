@@ -81,3 +81,21 @@ html {
   font-family: 'Poppins', sans-serif !important;
   scroll-behavior: smooth !important;
 }
+
+#AyushStroke {
+  -webkit-text-stroke: 3px var(--courserColor);
+}
+
+.HeroText {
+  line-height: 12vw;
+  font-size: 12vw;
+}
+
+.HeroTextStroke {
+  font-size: 12vw;
+}
+
+.HeroTextSmall {
+  margin-top: 20px;
+  font-size: 30px;
+}
