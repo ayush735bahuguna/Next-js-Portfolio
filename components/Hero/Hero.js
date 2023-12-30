@@ -23,6 +23,22 @@ export default function Hero() {
                 scrub: 0.5,
             }
         })
+
+        gsap.to('#header', {
+            // backgroundColor: 'blue',
+            background: "rgba(255, 255, 255, 0.2)",
+            borderRadius: "10px",
+            boxShadow: "0 4px 30px rgba(0, 0, 0, 0.05)",
+            backdropFilter: " blur(2px)",
+            // border: "1px solid rgba(255, 255, 255, 0.3)",
+            scrollTrigger: {
+                trigger: '.hero',
+                start: 'top top',
+                end: "+=200",
+                scrub: 0.5,
+            }
+        })
+
     }, [])
 
     return (
@@ -31,7 +47,8 @@ export default function Hero() {
             backgroundImage: `url("${LightBackground}") repeat`
         }}>
 
-            <div className='p-5 gap-4' style={{ position: 'fixed', top: '10px', right: '0px', width: '100vw', height: '10px', display: 'flex', alignItems: 'center', justifyContent: 'end', zIndex: '999' }}>
+            <div id="header" className='p-7 gap-4' style={{ position: 'fixed', top: '0px', right: '0px', width: '100vw', height: '10px', display: 'flex', alignItems: 'center', justifyContent: 'end', zIndex: '999', }}>
+
                 <Link href={'https://github.com/ayush735bahuguna'} target="_blank">
                     <GithubIcon size={'35px'} strokeWidth={1.3} className='cursor-scale small   cursor-pointer' />
                 </Link>
