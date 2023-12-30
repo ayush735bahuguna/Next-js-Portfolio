@@ -80,6 +80,7 @@ html {
   cursor: none !important;
   font-family: 'Poppins', sans-serif !important;
   scroll-behavior: smooth !important;
+  box-sizing: border-box;
 }
 
 #AyushStroke {
@@ -98,4 +99,10 @@ html {
 .HeroTextSmall {
   margin-top: 20px;
   font-size: 30px;
+}
+
+.Heading {
+  font-size: 5rem;
+  margin: auto;
+  line-height: 4.2rem;
 }

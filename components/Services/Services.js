@@ -8,9 +8,9 @@ import ServicesImg from '../../asset/home images/Services.svg'
 export default function Services() {
     return (
         <section className='p-5'>
-            <p className='text-8xl cursor-scale lg:w-2/3'>Here’s what you can expect from me...</p>
+            <p className='Heading cursor-scale'>Here’s what you can expect from me...</p>
 
-            <div className='flex justify-between items-start flex-wrap'>
+            <div className='flex justify-between items-start flex-wrap max-sm:justify-center max-sm:items-start'>
 
                 <div style={{ margin: 'auto' }} className='flex justify-between flex-col items-start'>
                     <span className='mt-10' >Lorem ipsum, dolor sit amet consectetur <br /> adipisicing elit. Sapiente, recusandae?</span>

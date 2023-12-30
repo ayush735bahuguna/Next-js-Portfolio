@@ -14,10 +14,6 @@ export default function Navbar() {
 
     return (
         <section>
-            <Link href={"#Hero"} style={{ position: 'fixed', bottom: '30px', right: '30px', zIndex: '99' }} className='rounded-full'>
-                <ArrowUpFromDot />
-            </Link>
-
             <nav className='cursor-scale small' style={{ width: '100vw', position: 'fixed', bottom: '0px', height: '100px', display: 'flex', alignItems: 'center', zIndex: '99', justifyContent: 'center' }}>
 
 

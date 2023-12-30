@@ -50,8 +50,8 @@ export default function Projects() {
                     <div id='Projects'>
 
                         <section style={{ flexWrap: 'wrap', width: '100vw' }}>
-                            <div className='text-8xl content cursor-scale '>My <br /> Projects</div>
-                            <Image src={project} alt='' style={{ width: '100vw', height: 'auto', margin: '50px 10px' }} />
+                            <div className='Heading p-5'>My <br /> Projects</div>
+                            <Image src={project} alt='' style={{ width: '90%', margin: '30px 5%' }} />
                         </section>
 
                         <PanelSectionSm
@@ -103,7 +103,7 @@ export default function Projects() {
                 <div className="container" id='Projects'>
 
                     <section className="panel" style={{ flexWrap: 'wrap', width: '100vw' }}>
-                        <div className='text-8xl content cursor-scale '>My <br /> Projects</div>
+                        <div className='Heading content cursor-scale'>My <br /> Projects</div>
                         <Image src={project} alt='' style={{ width: '100vw', height: 'auto' }} />
                     </section>
 

@@ -4,14 +4,13 @@ import "./ContactUs.css"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from '../ui/button'
-import Image from 'next/image'
 
 
 export default function ContactUs() {
     return (
-        <section id='Contact'>
+        <section id='Contact' className='p-5'>
             <div id='layout'>
-                <p id="section" className='text-8xl p-5 cursor-scale'>Ready? <br />Let’s get started.</p>
+                <p id="section" className='Heading cursor-scale'>Ready? <br />Let’s get started.</p>
 
                 <div id='form'>
                     <form target="_self"
@@ -35,9 +34,6 @@ export default function ContactUs() {
                     </form>
                 </div>
 
-                {/* <section >
-                    <Image src={svg} className='p-5' style={{ width: '100%', maxWidth: '70vw' }} alt=' ' />
-                </section> */}
             </div>
         </section>
 

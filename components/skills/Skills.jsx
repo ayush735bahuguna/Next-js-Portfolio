@@ -25,12 +25,12 @@ export default function Skills() {
 
     ]
     return (
-        <section id='About'>
-            <p className='text-8xl cursor-scale p-5'>About me</p>
+        <section id='About' className='p-5'>
+            <p className='Heading cursor-scale'>About me</p>
 
-            <div style={{ width: '100vw' }} className='TextAnimationStop flex items-strech justify-around p-4 flex-wrap'>
-                <p className='sm:w-1/3 pt-5'>
-                    <p className='text-5xl cursor-scale small'>Get to know me</p>
+            <div className='TextAnimationStop flex items-strech justify-around flex-wrap'>
+                <p className='sm:w-1/3'>
+                    <p className='text-5xl cursor-scale small mt-10'>Get to know me</p>
                     <br />
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dolore esse illo voluptatum ipsam, eligendi quibusdam hic ipsa minima accusantium commodi corporis quam recusandae odit, similique aspernatur enim cumque distinctio.
                     <br />
@@ -38,9 +38,9 @@ export default function Skills() {
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dolore esse illo voluptatum ipsam, eligendi quibusdam hic ipsa minima accusantium commodi corporis quam recusandae odit, similique aspernatur enim cumque distinctio.
                 </p>
 
-                <div className='sm:w-1/2 p-5 flex items-start justify-between flex-col'>
+                <div className='sm:w-1/2 flex items-start justify-between flex-col mt-10'>
                     <div>
-                        <p className='text-5xl cursor-scale small m-2'>My skills and tool</p>
+                        <p className='text-5xl cursor-scale small pb-4'>My skills and tool</p>
                         <div className='flex items-center justify-start flex-wrap' >
                             {Skills?.map((Skill, index) => {
                                 return (
@@ -49,7 +49,7 @@ export default function Skills() {
                             })}
                         </div>
                     </div>
-                    <Link href={'https://drive.google.com/file/d/1hegdSp6lI4kw-sEzMG6tnjKGj3JYP0oq/view?usp=sharing'} target='_blank'>
+                    <Link href={'https://drive.google.com/file/d/1hegdSp6lI4kw-sEzMG6tnjKGj3JYP0oq/view?usp=sharing'} target='_blank' className='max-sm:mt-20'>
                         <Button variant={'outline'} className={'m-2'} > <Download /> &nbsp; Resume </Button>
                     </Link>
 

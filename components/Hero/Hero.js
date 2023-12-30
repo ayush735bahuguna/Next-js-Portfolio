@@ -5,6 +5,8 @@ import { ScrollTrigger } from "gsap/all";
 import { GithubIcon, Instagram, Linkedin } from "lucide-react";
 import Link from "next/link";
 
+import LightBackground from "../../asset/LightBackground.svg";
+
 export default function Hero() {
 
     useGSAP(() => {
@@ -24,7 +26,11 @@ export default function Hero() {
     }, [])
 
     return (
-        <div id="Hero" className='flex flex-col' style={{ paddingLeft: '10%', paddingTop: '10%', minHeight: '100vh', position: 'relative' }}>
+        <div id="Hero" className='flex flex-col  max-sm:item-center max-sm:justify-center' style={{
+            paddingLeft: '10%', paddingTop: '10%', minHeight: '100vh', position: 'relative',
+            backgroundImage: `url("${LightBackground}") repeat`
+        }}>
+
             <div className='p-5 gap-4' style={{ position: 'fixed', top: '10px', right: '0px', width: '100vw', height: '10px', display: 'flex', alignItems: 'center', justifyContent: 'end', zIndex: '999' }}>
                 <Link href={'https://github.com/ayush735bahuguna'} target="_blank">
                     <GithubIcon size={'35px'} strokeWidth={1.3} className='cursor-scale small   cursor-pointer' />
@@ -37,14 +43,20 @@ export default function Hero() {
                 </Link>
             </div>
 
-            <span className='HeroText font-semibold cursor-scale '>Hey,</span>
-            <span className='HeroText font-semibold cursor-scale '>I&apos;m
+            <span className='HeroText cursor-scale max-sm:text-7xl '>Hey,</span>
+            <span className='HeroText cursor-scale max-sm:text-7xl'>I&apos;m
 
-                <span id="Ayush" className="HeroText logo" style={{ position: 'fixed', zIndex: '999' }}>&nbsp;Ayush</span>
-                <span id="AyushStroke" className="HeroTextStroke" style={{ mixBlendMode: 'none', WebkitTextFillColor: 'transparent' }}>&nbsp;Ayush</span>
+                <span id="Ayush" className="HeroText logo max-sm:text-8xl"
+                    style={{ position: 'fixed', zIndex: '999' }}>&nbsp;Ayush
+                </span>
+                <span id="AyushStroke"
+                    className="HeroTextStroke max-sm:text-8xl" style={{ mixBlendMode: 'none', WebkitTextFillColor: 'transparent' }}>&nbsp;Ayush
+                </span>
 
             </span>
-            <p className='HeroTextSmall font-semibold cursor-scale small' style={{ paddingLeft: '30%', paddingRight: '10%' }}>- a Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, fugiat!</p>
+            <p className='HeroTextSmall font-semibold cursor-scale small max-sm:text-2xl' style={{ paddingLeft: '30%', paddingRight: '10%' }}>
+                - a Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, fugiat!
+            </p>
         </div>
     )
 }

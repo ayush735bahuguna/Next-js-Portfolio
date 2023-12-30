@@ -66,7 +66,7 @@ export default function Cursor() {
     }, [])
 
     return (
-        <div className="cursor flex justify-center items-center">
+        <div className="cursor flex justify-center items-center max-sm:hidden">
             <div id="open" className='openHidden text-white dark:text-black'>
                 <ArrowUpRight />
             </div>

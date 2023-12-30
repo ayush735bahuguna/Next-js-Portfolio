@@ -12,16 +12,9 @@
 
  #form {
      grid-area: form;
-     padding: 10px 20px;
-     min-width: 300px;
-     display: flex;
-     align-items: center;
-     justify-self: center;
+     padding-top: 20px;
  }
 
- form {
-     width: 100%;
- }
 
  #section {
      grid-area: section;
@@ -44,6 +37,5 @@
 
      #form {
          width: 100%;
-         margin: 20px 0px;
      }
  }
