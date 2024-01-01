@@ -5,37 +5,40 @@ import Link from 'next/link';
 
 export default function Skills() {
     const Skills = [
-        { "name": "Node Js", },
-        { "name": "React Js", },
         { "name": "Next Js", },
+        { "name": "React Js", },
+        { "name": "Node Js", },
         { "name": "express Js", },
-        { "name": "Js", },
-        { "name": "Html", },
-        { "name": "Css", },
+        { "name": "GSAP", },
         { "name": "Tailwind", },
         { "name": "Bootstrap", },
         { "name": "Photoshop", },
         { "name": "Mongo DB", },
-        { "name": "Rest full API", },
+        { "name": "Html", },
+        { "name": "Css", },
+        { "name": "Js", },
         { "name": "Netlify", },
+        { "name": "API", },
         { "name": "Github", },
         { "name": "Git", },
-        { "name": "GSAP", },
         { "name": "VS code", },
+        { "name": "Postman", },
 
     ]
     return (
         <section id='About' className='p-5'>
             <p className='Heading cursor-scale'>About me</p>
 
-            <div className='TextAnimationStop flex items-strech justify-around flex-wrap'>
+            <div className='TextAnimationStop flex items-strech justify-around flex-wrap pb-24'>
                 <p className='sm:w-1/3'>
                     <p className='text-5xl cursor-scale small mt-10'>Get to know me</p>
                     <br />
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dolore esse illo voluptatum ipsam, eligendi quibusdam hic ipsa minima accusantium commodi corporis quam recusandae odit, similique aspernatur enim cumque distinctio.
+                    Hello, my name is Ayush Bahuguna, and I am currently pursuing a Bachelor's degree in Electronics and Communication Engineering from
+                    <Link href={'https://www.gbpuat.ac.in/'} className='cursor-scale small' target='_blank'> GBPUAT Pantnagar</Link>, Uttrakhand. As an aspiring engineer, I have a keen interest in leveraging technology to create innovative solutions.
                     <br />
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dolore esse illo voluptatum ipsam, eligendi quibusdam hic ipsa minima accusantium commodi corporis quam recusandae odit, similique aspernatur enim cumque distinctio.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dolore esse illo voluptatum ipsam, eligendi quibusdam hic ipsa minima accusantium commodi corporis quam recusandae odit, similique aspernatur enim cumque distinctio.
+                    <br />
+                    Driven by a curiosity to learn and grow, I actively seek new challenges to expand my skillset and contribute to meaningful projects.
+                    Additionally, I was chosen for the Siemens Scholarship Program 2021, where only 200 students are chosen from all around India.
                 </p>
 
                 <div className='sm:w-1/2 flex items-start justify-between flex-col mt-10'>

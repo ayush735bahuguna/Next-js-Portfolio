@@ -5,7 +5,6 @@ import { ScrollTrigger } from "gsap/all";
 import { GithubIcon, Instagram, Linkedin } from "lucide-react";
 import Link from "next/link";
 
-import LightBackground from "../../asset/LightBackground.svg";
 
 export default function Hero() {
 
@@ -43,10 +42,8 @@ export default function Hero() {
 
     return (
         <div id="Hero" className='flex flex-col  max-sm:item-center max-sm:justify-center' style={{
-            paddingLeft: '10%', paddingTop: '10%', minHeight: '100vh', position: 'relative',
-            backgroundImage: `url("${LightBackground}") repeat`
+            paddingLeft: '20%', paddingTop: '10%', minHeight: '100vh', position: 'relative',
         }}>
-
             <div id="header" className='p-7 gap-4' style={{ position: 'fixed', top: '0px', right: '0px', width: '100vw', height: '10px', display: 'flex', alignItems: 'center', justifyContent: 'end', zIndex: '999', }}>
 
                 <Link href={'https://github.com/ayush735bahuguna'} target="_blank">
@@ -72,7 +69,7 @@ export default function Hero() {
 
             </span>
             <p className='HeroTextSmall font-semibold cursor-scale small max-sm:text-2xl' style={{ paddingLeft: '30%', paddingRight: '10%' }}>
-                - a Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, fugiat!
+                - A full-stack B.Tech student
             </p>
         </div>
     )
