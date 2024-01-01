@@ -18,6 +18,7 @@ export default function Skills() {
         { "name": "Css", },
         { "name": "Js", },
         { "name": "Netlify", },
+        { "name": "Render", },
         { "name": "API", },
         { "name": "Github", },
         { "name": "Git", },
@@ -33,7 +34,7 @@ export default function Skills() {
                 <p className='sm:w-1/3'>
                     <p className='text-5xl cursor-scale small mt-10'>Get to know me</p>
                     <br />
-                    Hello, my name is Ayush Bahuguna, and I am currently pursuing a Bachelor's degree in Electronics and Communication Engineering from
+                    Hello, my name is Ayush Bahuguna, and I am currently pursuing a Bachelor&apos;s degree in Electronics and Communication Engineering from
                     <Link href={'https://www.gbpuat.ac.in/'} className='cursor-scale small' target='_blank'> GBPUAT Pantnagar</Link>, Uttrakhand. As an aspiring engineer, I have a keen interest in leveraging technology to create innovative solutions.
                     <br />
                     <br />
