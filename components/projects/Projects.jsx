@@ -13,6 +13,7 @@ import project2 from '../../asset/projects/Magic-pictures.png';
 import project3 from '../../asset/projects/Social-link.png';
 import project4 from '../../asset/projects/chat-link.png';
 import project5 from '../../asset/projects/movie-adda.png';
+import project6 from '../../asset/projects/dropbox-clone1.png';
 import Image from 'next/image';
 import Services from '../Services/Services';
 import PanelSection from './PanelSection';
@@ -59,6 +60,13 @@ export default function Projects() {
                             Description={' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, sit?'}
                             imgUrl={project1}
                             url={'https://note-quick.netlify.app/'}
+                        />
+
+                        <PanelSectionSm
+                            Name={'Dropbox-clone'}
+                            Description={' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, sit?'}
+                            imgUrl={project6}
+                            url={'https://dropbox-app-clone.netlify.app/'}
                         />
 
                         <PanelSectionSm
@@ -112,6 +120,13 @@ export default function Projects() {
                         Description={' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, sit?'}
                         imgUrl={project1}
                         url={'https://note-quick.netlify.app/'}
+                    />
+
+                    <PanelSection
+                        Name={'Dropbox-clone'}
+                        Description={' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, sit?'}
+                        imgUrl={project6}
+                        url={'https://dropbox-app-clone.netlify.app/'}
                     />
 
                     <PanelSection
