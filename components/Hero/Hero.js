@@ -69,7 +69,7 @@ export default function Hero() {
 
             </span>
             <p className='HeroTextSmall font-semibold cursor-scale small max-sm:text-2xl' style={{ paddingLeft: '30%', paddingRight: '10%' }}>
-                - A full-stack B.Tech student
+                - A Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             </p>
         </div>
     )
