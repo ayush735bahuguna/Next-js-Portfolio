@@ -42,7 +42,7 @@ export default function Hero() {
 
     return (
         <div id="Hero" className='flex flex-col  max-sm:item-center max-sm:justify-center' style={{
-            paddingLeft: '20%', paddingTop: '10%', minHeight: '100vh', position: 'relative',
+            paddingLeft: '10%', paddingTop: '10%', minHeight: '100vh', position: 'relative',
         }}>
             <div id="header" className='p-7 gap-4' style={{ position: 'fixed', top: '0px', right: '0px', width: '100vw', height: '10px', display: 'flex', alignItems: 'center', justifyContent: 'end', zIndex: '999', }}>
 

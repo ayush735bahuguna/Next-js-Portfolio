@@ -4,6 +4,7 @@ import "./ContactUs.css"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from '../ui/button'
+import Link from 'next/link'
 
 
 export default function ContactUs() {
@@ -35,7 +36,10 @@ export default function ContactUs() {
                 </div>
 
             </div>
+            <footer className='flex justify-between items-start p-5 mt-10 mb-30'>
+                <p>Made By Ayush Bahuguna</p>
+                <Link href='#Hero'>Home</Link>
+            </footer>
         </section>
-
     )
 }
