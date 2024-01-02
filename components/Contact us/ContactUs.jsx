@@ -1,5 +1,4 @@
 import React from 'react'
-import svg from '../../asset/ContactUs.svg'
 import "./ContactUs.css"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"

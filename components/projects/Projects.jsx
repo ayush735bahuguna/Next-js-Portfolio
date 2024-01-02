@@ -45,10 +45,10 @@ export default function Projects() {
 
     return (
         <>
-            <section className='sm:hidden'>
+            <section className='sm:hidden' >
                 <Services />
-                <section>
-                    <div id='Projects'>
+                <section id='Projects'>
+                    <div >
 
                         <section style={{ flexWrap: 'wrap', width: '100vw' }}>
                             <div className='Heading p-5'>My <br /> Projects</div>
@@ -108,7 +108,7 @@ export default function Projects() {
                     <Services />
                 </div>
 
-                <div className="container" id='Projects'>
+                <section className="container" id='Projects'>
 
                     <section className="panel" style={{ flexWrap: 'wrap', width: '100vw' }}>
                         <div className='Heading content cursor-scale'>My <br /> Projects</div>
@@ -157,7 +157,7 @@ export default function Projects() {
                         imgUrl={project2}
                         url={'https://magic-pictures.netlify.app/'}
                     />
-                </div >
+                </section >
 
                 <div className="lastContainer">
                     <ContactUs />
