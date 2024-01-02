@@ -20,6 +20,8 @@ export default function RootLayout({ children }) {
         disableTransitionOnChange
       >
         <body className={inter.className}>
+          <div id='Background-gradient'></div>
+          <div id='Background-gradient-image'></div>
           <Navbar />
           {children}
         </body>
