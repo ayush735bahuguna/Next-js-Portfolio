@@ -44,7 +44,7 @@ export default function ContactUs() {
                 <div id="form" className="shadow-xl rounded-xl overflow-hidden" >
                     <Card className='border-none outline-none'>
                         <CardHeader>
-                            <p className='text-slate-600/100 dark:text-white flex'>I am also interested in freelance opportunities, especially ambitious projects. However, if you have any other requests or questions, please don't hesitate to contact me.</p>
+                            <p className='text-slate-600/100 dark:text-white flex'>I am also interested in freelance opportunities, especially ambitious projects. However, if you have any other requests or questions, please don&apos;t hesitate to contact me.</p>
                         </CardHeader>
                         <CardContent>
                             <form>
