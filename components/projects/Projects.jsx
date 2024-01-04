@@ -45,9 +45,9 @@ export default function Projects() {
 
     return (
         <>
-            <section className='sm:hidden' >
+            <section className='sm:hidden mb-24' >
                 <Services />
-                <section id='Projects'>
+                <section id='Projects' className='mb-24'>
                     <div >
 
                         <section style={{ flexWrap: 'wrap', width: '100vw' }}>

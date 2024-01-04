@@ -32,7 +32,7 @@ export default function Skills() {
 
             <div className='TextAnimationStop flex items-strech justify-around flex-wrap pb-24'>
                 <p className='sm:w-1/3'>
-                    <p className='text-5xl cursor-scale small mt-10'>Get to know me</p>
+                    <p className='text-4xl cursor-scale small mt-10'>Get to know me</p>
                     <br />
                     Hello, my name is Ayush Bahuguna, and I am currently pursuing a Bachelor&apos;s degree in Electronics and Communication Engineering from
                     <Link href={'https://www.gbpuat.ac.in/'} className='cursor-scale small' target='_blank'> GBPUAT Pantnagar</Link>, Uttrakhand. As an aspiring engineer, I have a keen interest in leveraging technology to create innovative solutions.
@@ -44,7 +44,7 @@ export default function Skills() {
 
                 <div className='sm:w-1/2 flex items-start justify-between flex-col mt-10'>
                     <div>
-                        <p className='text-5xl cursor-scale small pb-4'>My skills and tool</p>
+                        <p className='text-4xl cursor-scale small pb-4'>My skills and tool</p>
                         <div className='flex items-center justify-start flex-wrap' >
                             {Skills?.map((Skill, index) => {
                                 return (

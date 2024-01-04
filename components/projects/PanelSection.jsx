@@ -8,7 +8,7 @@ export default function PanelSection({ Name, url, Description, imgUrl }) {
                 <div className='cursor-scale navigate hover:scale-105' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', overflowY: "scroll", height: '90vh', flexDirection: 'column', transition: 'all 0.1s ease' }}>
 
 
-                    <Image src={imgUrl} style={{ width: '100%' }} alt='' />
+                    <Image src={imgUrl} style={{ width: '100%', borderRadius: '10px' }} alt='' />
                     <div className="m-5 content">
                         <p className='text-4xl'>
                             {Name}
