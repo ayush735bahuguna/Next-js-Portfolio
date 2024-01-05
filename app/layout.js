@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/components/theme-provider'
 import Navbar from '@/components/Header/Navbar/Navbar';
+import Cursor from '@/components/Cursor/Cursor';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
         <body className={inter.className}>
           <div id='Background-gradient'></div>
           <div id='Background-gradient-image'></div>
+          <Cursor />
           <Navbar />
           {children}
         </body>

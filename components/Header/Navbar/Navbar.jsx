@@ -19,7 +19,7 @@ export default function Navbar() {
             <div className='bg-slate-100 dark:bg-slate-800' style={{ borderRadius: '20px', width: 'fit-content', boxShadow: '0 2px 10px rgba(0, 0, 0, .1)', padding: '5px 10px' }}>
                 <ul style={{ display: 'flex', textDecoration: 'none', flexDirection: 'row', listStyleType: 'none', justifyContent: 'center', alignItems: 'center', cursor: 'pointer', margin: '0px', padding: '0px' }}>
                     <TooltipProvider>
-                        <Link href={'#Hero'}>
+                        <Link href={'/#Hero'}>
                             <Tooltip>
                                 <TooltipTrigger asChild>
                                     <li className='m-2 mx-3'> <Home /> </li>
@@ -30,7 +30,7 @@ export default function Navbar() {
                             </Tooltip>
                         </Link>
 
-                        <Link href={'#About'}>
+                        <Link href={'/#About'}>
                             <Tooltip>
                                 <TooltipTrigger asChild>
                                     <li className='m-2 mx-3'> <User /></li>
@@ -41,7 +41,7 @@ export default function Navbar() {
                             </Tooltip>
                         </Link>
 
-                        <Link href={"#Projects"}>
+                        <Link href={"/Projects"}>
                             <Tooltip>
                                 <TooltipTrigger asChild>
                                     <li className='m-2 mx-3'><FileJson2 /></li>
@@ -52,7 +52,7 @@ export default function Navbar() {
                             </Tooltip>
                         </Link>
 
-                        <Link href={"#Contact"}>
+                        <Link href={"/#Contact"}>
                             <Tooltip>
                                 <TooltipTrigger asChild>
                                     <li className='m-2 mx-3'><MessageSquareShare /></li>

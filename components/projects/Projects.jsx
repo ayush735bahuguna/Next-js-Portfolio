@@ -9,15 +9,14 @@ import ContactUs from '../Contact us/ContactUs';
 
 import project from '../../asset/home images/project.svg';
 import project1 from '../../asset/projects/quick-link.png';
-import project2 from '../../asset/projects/Magic-pictures.png';
-import project3 from '../../asset/projects/Social-link.png';
 import project4 from '../../asset/projects/chat-link.png';
-import project5 from '../../asset/projects/movie-adda.png';
 import project6 from '../../asset/projects/dropbox-clone1.png';
 import Image from 'next/image';
 import Services from '../Services/Services';
 import PanelSection from './PanelSection';
 import PanelSectionSm from './PanelSectionSm';
+import { ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Projects() {
 
@@ -76,27 +75,14 @@ export default function Projects() {
                             url={'https://chat-link.netlify.app/'}
                         />
 
-                        <PanelSectionSm
-                            Name={'Social Media App'}
-                            Description={' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, sit?'}
-                            imgUrl={project3}
-                            url={'https://social-link-app.netlify.app/'}
-                        />
 
+                        <Link href='/Projects' className='mt-10 cursor-scale navigate flex items-center justify-center'>
+                            <div className="text-3xl flex gap-2 items-center">
+                                More projects
+                                <ArrowRight size={'40px'} />
+                            </div>
+                        </Link>
 
-                        <PanelSectionSm
-                            Name={'Movie-adda'}
-                            Description={' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, sit?'}
-                            imgUrl={project5}
-                            url={'https://movie-adda.netlify.app/'}
-                        />
-
-                        <PanelSectionSm
-                            Name={'Magic Pictures'}
-                            Description={' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, sit?'}
-                            imgUrl={project2}
-                            url={'https://magic-pictures.netlify.app/'}
-                        />
                     </div >
                 </section>
                 <ContactUs />
@@ -111,7 +97,15 @@ export default function Projects() {
                 <section className="container" id='Projects'>
 
                     <section className="panel" style={{ flexWrap: 'wrap', width: '100vw' }}>
-                        <div className='Heading content cursor-scale'>My <br /> Projects</div>
+
+                        <span>
+                            <div className='Heading content cursor-scale'>My <br /> Projects</div>
+                            <Link href='/Projects' className='pt-5 text-3xl flex items-center text-slate-600'>
+                                More projects
+                                <ArrowRight size={'40px'} />
+                            </Link>
+                        </span>
+
                         <Image src={project} alt='' style={{ width: '100vw', height: 'auto' }} />
                     </section>
 
@@ -134,28 +128,6 @@ export default function Projects() {
                         Description={' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, sit?'}
                         imgUrl={project4}
                         url={'https://chat-link.netlify.app/'}
-                    />
-
-                    <PanelSection
-                        Name={'Social Media App'}
-                        Description={' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, sit?'}
-                        imgUrl={project3}
-                        url={'https://social-link-app.netlify.app/'}
-                    />
-
-
-                    <PanelSection
-                        Name={'Movie-adda'}
-                        Description={' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, sit?'}
-                        imgUrl={project5}
-                        url={'https://movie-adda.netlify.app/'}
-                    />
-
-                    <PanelSection
-                        Name={'Magic Pictures'}
-                        Description={' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, sit?'}
-                        imgUrl={project2}
-                        url={'https://magic-pictures.netlify.app/'}
                     />
                 </section >
 

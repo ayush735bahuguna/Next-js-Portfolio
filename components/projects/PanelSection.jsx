@@ -10,10 +10,10 @@ export default function PanelSection({ Name, url, Description, imgUrl }) {
 
                     <Image src={imgUrl} style={{ width: '100%', borderRadius: '10px' }} alt='' />
                     <div className="m-5 content">
-                        <p className='text-4xl'>
+                        <p className='text-3xl'>
                             {Name}
                         </p>
-                        <p>
+                        <p className='text-slate-600'>
                             {Description}
                         </p>
                     </div>

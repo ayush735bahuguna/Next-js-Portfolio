@@ -154,7 +154,7 @@ html {
 
 
 * {
-  cursor: none !important;
+  /* cursor: none !important; */
   font-family: 'Poppins', sans-serif !important;
   scroll-behavior: smooth !important;
   box-sizing: border-box;
