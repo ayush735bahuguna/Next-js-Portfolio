@@ -20,47 +20,28 @@ export default function ContactUs() {
             <div id='layout' className='gap-4'>
                 <p id="section" className='Heading cursor-scale'>Ready? <br />Let’s get started.</p>
 
-                {/* <div id='form'>
-                    <form target="_self"
-                        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdEE23F1cVhir52GPPXtL7rPmb8_IHCuzB9UfNG2fIskDZJiA/formResponse"
-                        method="POST">
-
-                        <div className="mb-3">
-                            <Input type="text" name="entry.1313705936" placeholder="Name" required />
-                        </div>
-
-                        <div className="mb-3">
-                            <Input type="email" name="entry.2117149272" placeholder="Email address" required />
-                        </div>
-
-                        <div className="mb-3">
-                            <Textarea placeholder="Type any Suggestions here." name="entry.280006415" />
-                        </div>
-                        <Button type="submit" className='m-1'>Submit</Button>
-                        <Button type="reset" variant={'outline'} className='m-1'>Reset</Button>
-
-                    </form>
-                </div> */}
                 <div id="form" className="shadow-xl rounded-xl overflow-hidden" >
                     <Card className='border-none outline-none'>
                         <CardHeader>
                             <p className='text-slate-600/100 dark:text-white flex'>I am also interested in freelance opportunities, especially ambitious projects. However, if you have any other requests or questions, please don&apos;t hesitate to contact me.</p>
                         </CardHeader>
                         <CardContent>
-                            <form>
+                            <form target="_self"
+                                action="https://docs.google.com/forms/d/e/1FAIpQLSdti5JRGiwbsstAroKUebg9yKJ1mdCG5EKZpgsj48Y8H6bPrQ/formResponse"
+                                method="POST">
                                 <div className="grid w-full items-center gap-4">
                                     <div className="flex flex-col space-y-1.5">
-                                        <Input type="email" placeholder="Enter your e-mail" />
+                                        <Input type="email" placeholder="Enter your e-mail" name="entry.243773728" required={'true'} />
                                     </div>
                                     <div className="flex flex-col space-y-1.5">
-                                        <Input type="text" placeholder="Message" />
+                                        <Input type="text" name="entry.1876194739" placeholder="Message" required={'true'} />
                                     </div>
+                                </div>
+                                <div className='flex justify-end mt-3'>
+                                    <Button type={'submit'}> Send <span className="rotate-45 ms-2"><Send /></span> </Button>
                                 </div>
                             </form>
                         </CardContent>
-                        <CardFooter className="flex justify-end">
-                            <Button> Send <span className="rotate-45 ms-2"><Send /></span> </Button>
-                        </CardFooter>
                     </Card>
                 </div>
             </div>
