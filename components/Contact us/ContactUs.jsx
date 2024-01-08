@@ -31,10 +31,10 @@ export default function ContactUs() {
                                 method="POST">
                                 <div className="grid w-full items-center gap-4">
                                     <div className="flex flex-col space-y-1.5">
-                                        <Input type="email" placeholder="Enter your e-mail" name="entry.243773728" required={'true'} />
+                                        <Input type="email" placeholder="Enter your e-mail" name="entry.243773728" required={true} />
                                     </div>
                                     <div className="flex flex-col space-y-1.5">
-                                        <Input type="text" name="entry.1876194739" placeholder="Message" required={'true'} />
+                                        <Input type="text" name="entry.1876194739" placeholder="Message" required={true} />
                                     </div>
                                 </div>
                                 <div className='flex justify-end mt-3'>
@@ -47,7 +47,7 @@ export default function ContactUs() {
             </div>
             <footer className='flex justify-between items-start p-5 mt-10 mb-30'>
                 <p>Made By Ayush Bahuguna</p>
-                <Link href='#Hero'>Home</Link>
+                <Link href='/#Hero'>Home</Link>
             </footer>
         </section>
     )

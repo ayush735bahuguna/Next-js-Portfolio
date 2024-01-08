@@ -54,7 +54,7 @@ export default function Skills() {
                         </div>
                     </div>
                     <Link href={'https://drive.google.com/file/d/1hegdSp6lI4kw-sEzMG6tnjKGj3JYP0oq/view?usp=sharing'} target='_blank' className='max-sm:mt-20'>
-                        <Button className={'m-2'} > <Download /> &nbsp; Resume </Button>
+                        <Button className={'m-2 cursor-scale small'} > <Download /> &nbsp; Resume </Button>
                     </Link>
 
                 </div>
