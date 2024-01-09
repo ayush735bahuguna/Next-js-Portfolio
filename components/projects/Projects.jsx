@@ -44,8 +44,10 @@ export default function Projects() {
 
     return (
         <>
-            <section className='sm:hidden mb-24 mt-24' >
-                <Services />
+            <section className='sm:hidden' >
+                <div className='mb-24'>
+                    <Services />
+                </div>
                 <section id='Projects' className='mb-24'>
                     <div >
 
