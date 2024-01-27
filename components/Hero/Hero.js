@@ -52,7 +52,7 @@ export default function Hero() {
                 <Link href={'https://www.linkedin.com/in/ayushbahuguna'} target="_blank">
                     <Linkedin size={'35px'} strokeWidth={1.3} className='cursor-scale small  cursor-pointer' />
                 </Link>
-                <Link href={'https://www.instagram.com/ayush.jsx/?igshid=MzNlNGNkZWQ4Mg%3D%3D'} target="_blank">
+                <Link href={'https://www.instagram.com/ayush.bahuguna.a?igsh=emw1bzFvZGZiZ3dm'} target="_blank">
                     <Instagram size={'35px'} strokeWidth={1.3} className='cursor-scale small  cursor-pointer' />
                 </Link>
             </div>

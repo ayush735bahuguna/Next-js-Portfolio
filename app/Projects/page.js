@@ -50,7 +50,8 @@ export default function page() {
                         Name={'Social Media App'}
                         Description={' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, sit?'}
                         imgUrl={project3}
-                        url={'https://social-link-app.netlify.app/'}
+                        // url={'https://social-link-app.netlify.app/'}
+                        url={'#'}
                     />
                 </div>
 
