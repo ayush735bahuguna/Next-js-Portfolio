@@ -16,11 +16,15 @@ import { Send } from 'lucide-react'
 
 export default function ContactUs() {
     return (
-        <section id='Contact' className='p-5'>
-            <div id='layout' className='gap-4'>
-                <p id="section" className='Heading cursor-scale'>Ready? <br />Let’s get started.</p>
+        <section className='p-5'>
+            <div className='flex items-center justify-between sm:flex-row  max-sm:flex-col'>
+                <div>
 
-                <div id="form" className="shadow-xl rounded-xl overflow-hidden" >
+                    <p className='Heading cursor-scale'>Ready?</p>
+                    <p className='text-6xl cursor-scale'>Let’s get started</p>
+                </div>
+
+                <div id="form" className="overflow-hidden" >
                     <Card className='border-none outline-none'>
                         <CardHeader>
                             <p className='text-slate-600/100 dark:text-white flex'>I am also interested in freelance opportunities, especially ambitious projects. However, if you have any other requests or questions, please don&apos;t hesitate to contact me.</p>
@@ -44,7 +48,9 @@ export default function ContactUs() {
                         </CardContent>
                     </Card>
                 </div>
+
             </div>
+
             <footer className='flex justify-between items-start p-5 mt-10 mb-30'>
                 <p>Made By Ayush Bahuguna</p>
                 <Link href='/#Hero'>Home</Link>

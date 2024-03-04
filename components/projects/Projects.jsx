@@ -10,7 +10,7 @@ import ContactUs from '../Contact us/ContactUs';
 import project from '../../asset/home images/project.svg';
 import project1 from '../../asset/projects/quick-link.png';
 import project4 from '../../asset/projects/chat-link.png';
-import project6 from '../../asset/projects/dropbox-clone1.png';
+import project3 from '../../asset/projects/Social-link.png';
 import Image from 'next/image';
 import Services from '../Services/Services';
 import PanelSection from './PanelSection';
@@ -18,7 +18,30 @@ import PanelSectionSm from './PanelSectionSm';
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 
+
+
 export default function Projects() {
+
+    const Data = [
+        {
+            Name: 'Social Media App',
+            Description: 'Developed a full-stack social media web application utilizing the MERN stack ( MongoDB, Express.js, React.js, Node.js ). This application allows users to: Create and manage profiles - Create, edit, and delete posts - Like and comment on other users posts - Follow , Unfollow other users - Search for users and posts',
+            imgUrl: project3,
+            url: 'https://social-link-app.vercel.app/',
+        },
+        {
+            Name: 'MERN Notes App',
+            Description: 'Developed a single-page web application for note-taking utilizing the MERN stack (MongoDB, Express.js, React.js, Node.js). This application allows users to: Create and manage profiles - Create, edit, and delete notes - Search notes by title - Securely store notes in a database',
+            imgUrl: project1,
+            url: 'https://note-quick.netlify.app/',
+        },
+        {
+            Name: 'MERN Chat App',
+            Description: 'A chat app using React in frontend and Node js in backend with mongodb database',
+            imgUrl: project4,
+            url: 'https://chat-link.netlify.app/',
+        }
+    ]
 
     useGSAP(
         () => {
@@ -44,7 +67,7 @@ export default function Projects() {
 
     return (
         <>
-            <section className='sm:hidden' >
+            <section className='lg:hidden' >
                 <div className='mb-24'>
                     <Services />
                 </div>
@@ -56,26 +79,16 @@ export default function Projects() {
                             <Image src={project} alt='' style={{ width: '90%', margin: '30px 5%' }} />
                         </section>
 
-                        <PanelSectionSm
-                            Name={'MERN Notes App'}
-                            Description={' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, sit?'}
-                            imgUrl={project1}
-                            url={'https://note-quick.netlify.app/'}
-                        />
+                        {Data?.map((e, i) => {
+                            return <PanelSectionSm
+                                key={i}
+                                Name={e.Name}
+                                Description={e.Description}
+                                imgUrl={e.imgUrl}
+                                url={e.url}
+                            />
+                        })}
 
-                        <PanelSectionSm
-                            Name={'Dropbox-clone'}
-                            Description={' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, sit?'}
-                            imgUrl={project6}
-                            url={'https://dropbox-app-clone.netlify.app/'}
-                        />
-
-                        <PanelSectionSm
-                            Name={'MERN Chat App'}
-                            Description={' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, sit?'}
-                            imgUrl={project4}
-                            url={'https://chat-link.netlify.app/'}
-                        />
 
 
                         <Link href='/Projects' className='mt-10 cursor-scale navigate flex items-center justify-center'>
@@ -90,7 +103,7 @@ export default function Projects() {
                 <ContactUs />
             </section>
 
-            <section className='max-sm:hidden' >
+            <section className='max-lg:hidden' >
 
                 <div className="firstContainer">
                     <Services />
@@ -111,26 +124,16 @@ export default function Projects() {
                         <Image src={project} alt='' style={{ width: '100vw', height: 'auto' }} />
                     </section>
 
-                    <PanelSection
-                        Name={'MERN Notes App'}
-                        Description={' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, sit?'}
-                        imgUrl={project1}
-                        url={'https://note-quick.netlify.app/'}
-                    />
+                    {Data?.map((e, i) => {
+                        return <PanelSection
+                            key={i}
+                            Name={e.Name}
+                            Description={e.Description}
+                            imgUrl={e.imgUrl}
+                            url={e.url}
+                        />
+                    })}
 
-                    <PanelSection
-                        Name={'Dropbox-clone'}
-                        Description={' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, sit?'}
-                        imgUrl={project6}
-                        url={'https://dropbox-app-clone.netlify.app/'}
-                    />
-
-                    <PanelSection
-                        Name={'MERN Chat App'}
-                        Description={' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, sit?'}
-                        imgUrl={project4}
-                        url={'https://chat-link.netlify.app/'}
-                    />
                 </section >
 
                 <div className="lastContainer">
